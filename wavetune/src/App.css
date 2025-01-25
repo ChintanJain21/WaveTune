@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.music-player {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  background-size: cover; 
+  background-position: center; 
+}
+
+.music-info img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.music-info h2 {
+  margin: 10px 0 5px;
+  font-size: 1.5rem;
+}
+
+.music-info p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-container input {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.controls button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #45a049;
+}
+
+.changeBackBtn{
+  width: 200px;
+  height: 15px;
+  background-color: #eee;
+  position: absolute;
+  border-radius: 12px 12px 0 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  transition: .3s;
+  color: #eee;
+  cursor: pointer;
+  padding: 3px 0 0 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.changeBackBtn:hover{
+  height: 30px;
+  color: #222;
+}
+.backgroundVideo{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  z-index: -1;
+  filter: saturate(2.5);
+}
