@@ -1,4 +1,4 @@
-Wavetune
+**Wavetune**
 
 Wavetune is a modern music player application built using React, Redux Toolkit, Tailwind CSS, and the Deezer API for music streaming. It offers a seamless user experience with dynamic music playback, album art display, and intuitive navigation.
 
